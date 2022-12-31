@@ -3059,11 +3059,6 @@ bool FlashWriteResultCheck(void) {
 //PLL = 5
 
 //EVB
-if (checkHWBoard()==AI2202_EVB) {
-	PCLK = 24000000;
-	PLL = 4;
-}
-
 	if( PCLKfromFW!=PCLK) {
 		pr_err("OIS s4sw PCLK=%d change to %d", PCLKfromFW, PCLK);			
 		IIC_DataSend(0x03F0, 4, (unsigned char*)&PCLK);
@@ -3170,10 +3165,6 @@ void S4W_FW_Update( char* Firmware_Data_Buffer, ssize_t FirmwareSize)
 	/* Check RUMBA device */
 	IIC_DataRead(0xFC, 4, SendData);
 	vFirmwareVersion = *(long*)&SendData[0];
-
-	if (checkHWBoard()==AI2202_EVB) {
-		pr_err("[OIS] FW This is EVB board");
-	}
 
 
 	if ((int)vFirmwareVersion>=(int)vFileVersion) {
