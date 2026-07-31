@@ -16,6 +16,23 @@
       "message": "viewfinder is choppy",
       "revId": "75ba39c0455e206e5fc8f29f0c62abdf5fd104fd",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2177cb9a_6d65b3fe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000730
+      },
+      "writtenOn": "2026-07-31T09:09:18Z",
+      "side": 1,
+      "message": "Can you try this?\n\nhttps://github.com/BladeRunner-A2C/android_kernel_msm-5.10/commit/0e8d25ed58ecd0961ae2a0ba2ceb5d30f02cbe7f",
+      "revId": "75ba39c0455e206e5fc8f29f0c62abdf5fd104fd",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
